@@ -47,11 +47,19 @@ int resto = (int) n1 % (int) n2;
 printf("%.0f %% %.0f = %.d\n",  n1, n2, resto);
 
 //Quociente da divisão
+int quociente_inteiro = n1 / (int) n2;
+printf("%.2f//%.2f = %d\n",  n1, n2, quociente_inteiro);
+
 
 // Incremento
+float incremento = n1++;
+printf("%.2f++ = %.2f\n",  n1, incremento);
 
-//
 
+//Decremento
+
+float decremento = n1--;
+printf("%.2f-- = %.2f\n",  n1, decremento);
 
 
 
