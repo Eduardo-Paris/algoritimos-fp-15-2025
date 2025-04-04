@@ -3,9 +3,8 @@
 
 int main(int argc, char* argv[]){
 
-    char opcao;
-
-  float r, D, d, L, b, h, B, A;
+char opcao;
+float r, D, d, L, b, h, B, A;
 
 printf("area.c\n");
 printf("Escolhauma opcao: \n");
@@ -16,82 +15,71 @@ printf("r - Retangulo\n");
 printf("t - Triangulo\n");
 printf("z - Trapezio\n");
 
-scanf("%c",  &opcao);
+scanf ("%c",  &opcao);
 
 switch(opcao){
 
-case "c":
+case 'c':
 printf("Circulo\n");
+printf("Digite o valor do raio (r):");
+scanf("%f", &r);
+A = M_PI * powf(r, 2);
 break;
 
-case "l":
+case 'l':
 printf("Losango\n");
-printf("losango.c\n");
-    printf("digite o valor da diagonal maior (D):");
-    scanf("%f", &D);
-    printf("Digite o valor da diagonal menor (d):"):
-    scanf("%f", &d);
-    A = (D * d)/2;
-
-   printf("A = %.2f\n", A);
+printf("digite o valor da diagonal maior (D):");
+scanf("%f", &D);
+printf("Digite o valor da diagonal menor (d):");
+scanf("%f", &d);
+A = (D * d)/2;
 break;
 
-case "q":
+case 'q':
 printf("Quadrado\n");
-float L, A;
-printf("quadrado.c\n")
 printf("Digite o valor do lado (L):");
 scanf("%f", &L);
 A = L * L;
-printf("A = %.2f", A);
 break;
 
-case "r":
+case 'r':
 printf("Retangulo\n");
-printf("retangulo.c\n");
 printf("digite o valor da base (b):");
 scanf("%f", &b);
 printf("digite o valor da altura (h):");
 scanf("%f", &h);
 A = b * h;
-printf("A = %.2f\n", A);
 break;
 
-case "t":
+case 't':
 printf("Triangulo\n");
-printf("retangulo.c\n");
 printf("digite o valor da base (b):");
 scanf("%f", &b);
 printf("digite o valor da altura (h):");
 scanf("%f", &h);
 A = (b * h)/2;
-printf("A = %.2f\n", A);
 break;
 
-case "z":
+case 'z':
 printf("trapezio\n");
-printf("trapezio.c\n");
-
 printf("digite o valor da base maior(B):");
-scanf("%f", &b);
-
+scanf("%f", &B);
 printf("digite o valor da base menor(b):");
 scanf("%f", &b);
-
 printf("digite o valor da altura (h):");
 scanf("%f", &h);
-
-A = ((B + b) * h)/2;
-printf("A = %.2f\n", A);
+A = ((B + b)*h)/2;
 break;
 
 default:
 printf("Opcao Invalida");
-
-return 0;
+A = 0;
+break;
 
 }
 
+printf("A = %.2f\n", A);
+return 0;
 
 
 
