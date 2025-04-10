@@ -78,7 +78,7 @@ int main(int arg, char* argv[]) {
 
     } else if(opcao == 'L'|| opcao == 'l') {
         printf("Certo, quer um filme leve!\n");
-        printf("Já que quer algo leve, prefere um filme animado ou um filme de comedia?\n");
+        printf("Ja que quer algo leve, prefere um filme animado ou um filme de comedia?\n");
         printf("Escolha um genero de filme:\n");
         printf("D - para Desenho animado\n");
         printf("C - para Comedia\n");
@@ -89,8 +89,8 @@ int main(int arg, char* argv[]) {
             printf("Que tal assistir 'Megamente'? Um filme animado e divertido feito pela Dreamworks, seu protagonista se chama Megamente um alienigena azul super inteligente e careca.\n");
         } 
         
-        else if(opcao == 'C'|| voltar == 'c') {
-            printf("Eu te recomendo ver 'As Branquelas', um filme clássico dos anos 2000! Com certeza vai te fazer rir bastante.\n");
+        else if(opcao == 'C'|| opcao == 'c') {
+            printf("Eu te recomendo ver 'As Branquelas', um filme classico dos anos 2000! Com certeza vai te fazer rir bastante.\n");
         
             
         } 
@@ -99,7 +99,7 @@ int main(int arg, char* argv[]) {
 
     } 
     
-printf("\nDeseja voltar ao início? Aperte X: ");
+printf("\nDeseja voltar ao inicio? Aperte X: ");
         scanf(" %c", &voltar);
     
 
