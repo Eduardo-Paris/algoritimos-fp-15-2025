@@ -2,7 +2,7 @@
 
 int main(int agrc, char* argv[]){
 
-
+int Q = 0;
 
  printf("--------------------------------------------------------------------------\n");
         
@@ -10,22 +10,26 @@ int main(int agrc, char* argv[]){
     
     printf("--------------------------------------------------------------------------\n");
         
-float n1, n2, notas, n3;
+printf("Escreva o numero de alunos: \n");
+scanf("%d", &Q);
 
-printf("Escreva o numero de alunos:");
-scanf("%f", &n1);
+float notas[Q];
+
+for(int i = 0; i < Q; i++){
+printf("Escreva a nota do aluno %d:", i);
+scanf("%f", &notas[i]);
+
+}
+
+for(int i = 0; i < Q; i++){
+printf("Nota do aluno %d: %.2f", i, notas[i]);
+
+}
 
 
-printf("Adicione uma nota:");
-scanf("%f", &n2);
-
-float notas = 0;
-float n3 = notas;
-float notas = n2 + n3;
 
 
-printf("Nota[%d] %.2f\n", i,  notas[i])
-
+printf("Quaintidade de alunos: %d", Q);
 
 
     return 0;
