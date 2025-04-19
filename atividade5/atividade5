@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, aprovados = 0, k;
+    float soma = 0.0, maior, menor;
+
+    printf("Digite o número de alunos da turma: ");
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        printf("Número de alunos inválido.\n");
+        return 1;
+    }
+
+    float notas[n];
+
+    for (i = 0; i < n; i++) {
+        do {
+            printf("Digite a nota do aluno %d (0.0 a 10.0): ", i + 1);
+            scanf("%f", &notas[i]);
+        } while (notas[i] < 0.0 || notas[i] > 10.0);
+
+        soma += notas[i];
+
+        if (notas[i] >= 6.0) {
+            aprovados++;
+        }
+
+        if (i == 0) {
+            maior = menor = notas[i];
+        } else {
+            if (notas[i] > maior) maior = notas[i];
+            if (notas[i] < menor) menor = notas[i];
+        }
+    }
+
+    float media = soma / n;
+
+    printf("Digite a posição k (1 a %d) para ver a nota do aluno: ", n);
+    scanf("%d", &k);
+
+    if (k >= 1 && k <= n) {
+        printf("\nNota do aluno na posição %d: %.2f\n", k, notas[k - 1]);
+    } else {
+        printf("\nPosição inválida.\n");
+    }
+
+    printf("Média geral da turma: %.2f\n", media);
+    printf("Maior nota: %.2f\n", maior);
+    printf("Menor nota: %.2f\n", menor);
+    printf("Quantidade de alunos aprovados: %d\n", aprovados);
+
+    return 0;
+}

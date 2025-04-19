@@ -99,19 +99,11 @@ int main(int arg, char* argv[]) {
 
     } 
     
-printf("\nDeseja voltar ao inicio? Aperte X: ");
-        scanf(" %c", &voltar);
-    
-
+    printf("\nDeseja voltar ao inicio? Aperte X: ");
+    scanf(" %c", &voltar);
 
 } while (voltar == 'X' || voltar == 'x');
 
-    printf("-ERRO FECHE O PROGRAMA-\n");
-    
-    
-    
-    
-    
-    return 0;
+printf("-ERRO FECHE O PROGRAMA-\n");
+return 0;
 }
-
