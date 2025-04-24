@@ -22,14 +22,14 @@ scanf("%f", &notas[i]);
 }
 
 for(int i = 0; i < Q; i++){
-printf("Nota do aluno %d: %.2f", i, notas[i]);
+printf(" Nota do aluno %d: %.2f", i, notas[i]);
 
 }
 
 
 
 
-printf("Quaintidade de alunos: %d", Q);
+printf("Quantidade de alunos: %d", Q);
 
 
     return 0;
