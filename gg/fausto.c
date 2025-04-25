@@ -43,7 +43,7 @@ int main(int arg, char* argv[]) {
                 printf("A comida esta otima, voces aproveitaram bastante\"\n");
                 printf("...\n");
                 printf("DEU TUDO CERTO\n");
-                 printf;("Final desbloqueado: 'FINAL FELIZ' –O domingao do Faustao-\n")
+                 printf;("Final desbloqueado: 'FINAL FELIZ' –O domingao do Faustao-\n");
 
             } else if(opcao == 'N' || opcao == 'n') {
                 printf("\nFausto: \"HAHAHA! Essa e boa! Tambem curto um pastel na feira, viu!\"\n");
@@ -62,18 +62,18 @@ int main(int arg, char* argv[]) {
             printf("... Mas no meio do voo, algo terrível acontece...\n");
             printf("Terrorista: \"Este avião agora pertence à resistência livre!\"\n");
             printf("Fausto: \"MAS QUE DIABOS, BICHO?!\"\n");
-            printf("O aviao é redirecionado para as Torres gemeas da Europa, na cidade de Velha York.\n");
+            printf("O aviao é redirecionado para as Torres gemeas da Europa, na cidade de Velha York na Europa.\n");
             printf("...\n");
-            printf("Seu aviao atinge as torres \n");
+            printf("Seu aviao atinge as torres da Europa\n");
             printf("CABUM\n");
             printf("Todo mundo morreu \n");
             printf("SE FODEU\n");
-            printf("Final desbloqueado: 'AMOR NAS ALTURAS' - Tragédia Aérea-\n");
+            printf("Final desbloqueado: 'AMOR NAS ALTURAS' - Tragedia Aerea-\n");
 
         } else if(opcao == 'C' || opcao == 'c') {
-            printf("Vocês chegam à Coreia do Norte. Tudo é cinza e silencioso, mas vocês estão animados mesmo assim.\n");
+            printf("Vocês chegam à Coreia do Norte. Tudo esta cinza e silencioso, mas voces ficam animados mesmo assim.\n");
            
-            printf("Fausto: \"É meio feio, mas olha só... Tem umas montanhas bonitas, hein!\"\n");
+            printf("Fausto: \"É meio feio, mas olha... Tem umas montanhas bonitas, hein!\"\n");
            
             printf("Vocês visitam Pyongyang, tiram selfies discretas, participam de tours vigiados.\n");
            
@@ -87,16 +87,16 @@ int main(int arg, char* argv[]) {
             printf("Fausto: Haha deu em nada viu? Vamo continuar o passeio por Pyongyang.\n");
             printf("Voces saem.\n");
             printf("...\n");
-            printf("De repente, buracos se abrem no chão e mísseis nucleares começam a emergir.\n");
-            printf("Fausto: \"TA PEGANDO FOGO, BICHO!! EU SÓ APERTEI UM BOTÃO!\"\n");
+            printf("De repente, buracos se abrem no chao e misseis nucleares emergem.\n");
+            printf("Fausto: \"TA PEGANDO FOGO, BICHO!! EU SÓ APERTEI UM BOTAO!\"\n");
             printf("...\n");
             printf("Os mísseis são lançados por Big Fausto atingiram a America. Os misseis em pouco tempo atingirao as cidades Ocidentais. Os EUA retaliarao assim que detectarem os misseis, respondendo imediatamente.\n");
             printf("...\n");
             printf("Narrador: Em minutos, o mundo inteiro está em guerra.\n");
-            printf("Narrador: Vocês morrem abraçados, cobertos pela luz branca de uma bomba atômica.\n");
+            printf("Narrador: Vocês morrem abraçados, cobertos pela luz branca de uma bomba atomica.\n");
             printf("...\n");
             printf("SE FODEU\n");
-            printf;("Final desbloqueado: 'APOCALIPSE FAUSTONICO' – O botão vermelho-\n")
+            printf;("Final desbloqueado: 'APOCALIPSE FAUSTONICO' – O botão vermelho-\n");
         
         }
                
@@ -171,7 +171,7 @@ int main(int arg, char* argv[]) {
     } while (voltar == 'X' || voltar == 'x');
 
     printf("-ERRO FECHE O PROGRAMA-\n");
-    return 0;
+
 
 final_fausto_mata:
     printf("\nVOCE ERROU A RESPOSTA!\n");
