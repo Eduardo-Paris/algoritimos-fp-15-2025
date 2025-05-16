@@ -154,7 +154,7 @@ int main(int arg, char* argv[]) {
  printf(" ...\n");
         printf("Traficantes: \"Riu da minha cara, achou que não ia dar nada? Vou te apresentar um Kit Salve da Quebrada.\n");
         
-        printf("Te avisei, te alertei, tu não quis me escutar");
+        printf("Te avisei, te alertei, tu nao quis me escutar");
 
         printf("Fim da linha. Todos morrem. O amor ficou eternizado nos ceus do Rio.\n");
         printf("...\n");
