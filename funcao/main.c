@@ -1,66 +1,44 @@
 #include <stdio.h>
-int ler_valor_valido(int opcao1, int opcao2, char* tgexto_opcao1, char* texto_opcao2){
 
+int ler_valor_valido(int opcao1, int opcao2, char* texto_opcao1, char* texto_opcao2, char* texto_adicional){
 int opcao_valida;
 
 do{
-
-
+    printf("%s\nEsolha uma opcao:\n%d - %s\n%d - %s\n", texto_adicional, opcao1, texto_opcao1, opcao2, texto_opcao2);
+    scanf("%d", &opcao_valida);
 }
-
 while(opcao_valida != opcao1 && opcao_valida != opcao2);
 
-return opcao_valida
+return opcao_valida;
+} 
+
+int main(int argc, char* argv[]){
+    
+    int opcao, resposta;
+    
+    opcao = ler_valor_valido(1, 0, "Iniciar quiz", "Sair", "");
+
+    if(opcao == 1){
+        resposta = ler_valor_valido(1, 2, "Rio de Janeiro", "Brasilia", "Qual eh a capital do Brasil?");
+
+        if(resposta == 2){
+            printf("Voce acertou!\n");
+        }
+        else {
+            printf("Pode melhorar!\n");
+        }
+
+        resposta = ler_valor_valido(3, 4, "Moscow", "Brasilia", "Qual eh a capital do Russia?");
+
+        if(resposta == 3){
+            printf("Voce acertou!\n");
+        }
+        else {
+            printf("Pode melhorar!\n");
+        }
+
+    }
+    
+
+    return 0;
 }
-
-
-
-
-
-
-int main(int c, char* argv[]){
-
-int opcao, resposta;
-
-opcao= ler_valor_valido(1, 0, "iniciar quiz", "Sair");
-
-if(opcao == 1){
-    resposta = ler_valor_valido(1,2, "Rio de janeiro", "Brasilia");
-printf("Escolha uma opcao:|n1 - iniciar quiz\n0 - Sair\n");
-scanf("%d", &opcao);
-
-if(resposta == 2){
-
-printf("voce acertou!\n");
-}
-else{
-    printf("pode melhorar!\n")
-}
-}
-while(opcao != 1 && opcao != 0 );
-
-if(opcao == 1){
-do{
-printf("Qual a capital do Brasil\n1 - Rio de Janeiro\n2 - Brasilia \n");
-scanf("%d", &resposta);
-}
-while(resposta != 1 && resposta != 2);
-
-if(opcao == 1){
-do{
-    printf("Qual a capital do Brasil\n1 - Rio de Janeiro\n2 - Brasilia \n");
-    scanf("%d", &resposta);
-
-}
-while (resposta != 1 && resposta != 2);
-
-if(resposta !== 2){
-    printf("voce acertou !\n");
-}
-}
-}
-
-return 0;
-
-}
- 
