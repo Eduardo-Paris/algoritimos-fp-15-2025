@@ -37,16 +37,18 @@ int main() {
         getchar(); // Limpa ENTER do buffer
 
         if (voto == 13) {
-            printf("Você votou em: Lula\n");
+            printf("Votou em: Lula\n");
         } else if (voto == 22) {
-            printf("Você votou em: Bolsonaro\n");
+            printf("Votou em: Bolsonaro\n");
 
         } else {
-            printf("Você votou NULO\n");
+            printf("Votou NULO\n");
         }
 
         char confirmar;
+          printf("----------------------------------------------------------------------------\n");
         printf("Confirma o voto? (s para sim / qualquer outra tecla para mudar): ");
+          printf("----------------------------------------------------------------------------\n");
         confirmar = getchar();
         getchar(); // Limpa ENTER
 
@@ -54,12 +56,12 @@ int main() {
             if (voto == 13) votos_lula++;
             else if (voto == 22) votos_bolsonaro++;
             else votos_nulo++;
-
+  printf("----------------------------------------------------------------------------\n");
             printf("Voto computado com sucesso.\n");
-        
+          printf("----------------------------------------------------------------------------\n");
             ;
             printf("----------------------------------------------------------------------------\n");
-        printf("FIM\n\n")
+        printf("FIM\n\n");
         
         printf("-----------------------------------------------------------------------------\n");
         } else {

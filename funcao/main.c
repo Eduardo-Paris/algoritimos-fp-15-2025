@@ -1,44 +1,37 @@
 #include <stdio.h>
 
-int ler_valor_valido(int opcao1, int opcao2, char* texto_opcao1, char* texto_opcao2, char* texto_adicional){
-int opcao_valida;
+#define TAM_NOME 64
 
-do{
-    printf("%s\nEsolha uma opcao:\n%d - %s\n%d - %s\n", texto_adicional, opcao1, texto_opcao1, opcao2, texto_opcao2);
-    scanf("%d", &opcao_valida);
+struct Aluno{
+
+char nome[TAM_NOME];
+float nota;
+};
+
+void imprimir_aluno(struct Aluno a){
+printf("Nome: %s \tNota: %f\n", a.nome, a.nota);
+
 }
-while(opcao_valida != opcao1 && opcao_valida != opcao2);
-
-return opcao_valida;
-} 
 
 int main(int argc, char* argv[]){
-    
-    int opcao, resposta;
-    
-    opcao = ler_valor_valido(1, 0, "Iniciar quiz", "Sair", "");
 
-    if(opcao == 1){
-        resposta = ler_valor_valido(1, 2, "Rio de Janeiro", "Brasilia", "Qual eh a capital do Brasil?");
+int n = 5;
+struct Aluno alunos[n];
 
-        if(resposta == 2){
-            printf("Voce acertou!\n");
-        }
-        else {
-            printf("Pode melhorar!\n");
-        }
+printf("Digite o nome do aluno 0:\n");
+fgets(alunos[0].nome, TAM_NOME, stdin);
+printf("Digite a nota do aluno 0:");
+scanf("%f", &alunos[0].nota);
 
-        resposta = ler_valor_valido(3, 4, "Moscow", "Brasilia", "Qual eh a capital do Russia?");
 
-        if(resposta == 3){
-            printf("Voce acertou!\n");
-        }
-        else {
-            printf("Pode melhorar!\n");
-        }
+imprimir_aluno(alunos[0]);
 
-    }
-    
+printf("Digite o nome do aluno 1:\n");
+fgets(alunos[1].nome, TAM_NOME, stdin);
+printf("Digite a nota do aluno 1:");
+scanf("%f", &alunos[1].nota);
 
-    return 0;
+imprimir_aluno(alunos[1]);
+
+return 0;
 }
