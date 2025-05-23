@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-
+#include <locale.h>
 
 
 
@@ -22,6 +22,8 @@ bool verificar_numero_primo(int numero) {
 }
 
 int main() {
+setlocale(LC_ALL, "pt_BR.UTF-8");
+
     int numero;
 
     printf("Digite um número inteiro: ");
@@ -32,7 +34,7 @@ int main() {
     } else {
     
     
-        printf("%d não é um número primo.\n", numero);
+        printf("%d nao eh um numero primo.\n", numero);
 
         
     }
