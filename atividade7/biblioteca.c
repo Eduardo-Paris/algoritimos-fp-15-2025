@@ -1,5 +1,5 @@
 /*
-Retorna o maior de 2 numeros inteiros
+    Retorna o maior entre 2 números inteiros.
 */
 int maior_2n(int a, int b){
     int maior;
