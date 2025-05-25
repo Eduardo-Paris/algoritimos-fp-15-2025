@@ -1,54 +1,19 @@
-/*
-    Retorna o maior entre 2 números inteiros.
-*/
-int maior_2n(int a, int b){
-    int maior;
-    if(a > b){
-        maior = a;
-    }
-    else{
-        maior = b;
-    }
-    return maior;
+#include "biblioteca.h"
+
+int maior2(int a, int b) {
+    return (a > b) ? a : b;
 }
 
-/*
-    Retorna o maior entre 3 números inteiros.
-*/
-int maior_3n(int a, int b, int c){
-    return maior_2n(maior_2n(a, b), c);
+int maior3(int a, int b, int c) {
+    int m = (a > b) ? a : b;
+    return (m > c) ? m : c;
 }
 
-/*
-    Retorna o maior entre N números
-*/
-int maior_n(int numeros[], int n){
-    int maior = numeros[0];
-    for(int i = 0; i < n; i++){
-        maior = maior_2n(maior, numeros[i]);
-    }
-    return maior;
+int menor2(int a, int b) {
+    return (a < b) ? a : b;
 }
 
-/*
-    Verifica se um dado número é primo (1) ou não (0)
-*/
-int verificar_numero_primo(int n){
-
-    if(n < 2){
-        return 0;
-    }
-
-    if((n % 2 == 0) && (n != 2)){
-        return 0;
-    }
-
-    for(int i = 3; i < n; i += 2){
-        if(n % i == 0){
-            return 0;
-        }
-    }
-
-    return 1;
-
+int menor3(int a, int b, int c) {
+    int m = (a < b) ? a : b;
+    return (m < c) ? m : c;
 }
