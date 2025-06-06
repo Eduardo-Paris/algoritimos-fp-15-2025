@@ -2,6 +2,11 @@
 
 int main(int argc, char* argv[]){
 
-    printf("Hello, world!");
+    printf("Hello, World!");
+    printf("Hallo, Welt!");
+    printf("Ola, Mundo!");
+    printf("Hola, Mundo");
+    printf("Salve, Mundi");
+    
     return 0;
 }

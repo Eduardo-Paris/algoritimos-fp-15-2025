@@ -10,17 +10,17 @@ MODOS DE ABERTURA DE ARQUIVO
 
 int main (int argc, char* argv []){
 
-    FILE *sexta = fopen("sexta.txt", 'w');
+    FILE *arq = fopen("arq.txt", 'w');
 
-    if(sexta == NULL){
+    if(arq == NULL){
     printf("erro ao abrir arquivo.");
     return 1;
 
     }
    
-    fprintf (sexta,"hello world");
+    fprintf (arq,"hello world");
      
-    fclose(sexta);
+    fclose(arq);
 
     return 0;
 
