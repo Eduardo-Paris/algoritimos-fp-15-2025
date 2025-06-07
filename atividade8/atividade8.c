@@ -22,6 +22,7 @@ float raiz_quadrada(float n) {
 }
 
 
+
 struct Ponto {
     float x;
     float y;
